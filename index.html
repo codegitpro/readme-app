@@ -1,539 +1,693 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="icon" href="img/favicon.png" type="image/png">
-        <title>MeetMe Personal</title>
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="vendors/linericon/style.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
-        <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
-        <link rel="stylesheet" href="vendors/animate-css/animate.css">
-        <link rel="stylesheet" href="vendors/popup/magnific-popup.css">
-        <link rel="stylesheet" href="vendors/flaticon/flaticon.css">
-        <!-- main css -->
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
-    <body>
-        
-        <!--================Header Menu Area =================-->
-        <header class="header_area">
-            <div class="main_menu">
-            	<nav class="navbar navbar-expand-lg navbar-light">
-					<div class="container box_1620">
-						<!-- Brand and toggle get grouped for better mobile display -->
-						<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<!-- Collect the nav links, forms, and other content for toggling -->
-						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-							<ul class="nav navbar-nav menu_nav ml-auto">
-								<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li> 
-								<li class="nav-item"><a class="nav-link" href="about-us.html">About</a></li> 
-								<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
-										<li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Blog</a>
-									<ul class="dropdown-menu">
-										<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-										<li class="nav-item"><a class="nav-link" href="single-blog.html">Blog Details</a></li>
-									</ul>
-								</li> 
-								<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-							</ul>
-						</div> 
-					</div>
-            	</nav>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hipstyle</title>
+    <link rel="icon" href="img/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="css/flaticon.css">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/gijgo.min.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/all.css">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html"> <img src="img/logo.png" alt="logo"> </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item"
+                            id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="service.html">Service</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Blog
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="blog.html"> blog</a>
+                                        <a class="dropdown-item" href="single-blog.html">Single blog</a>
+                                        
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="blog.html" id="navbarDropdown_1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        pages
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown_1">
+                                        <a class="dropdown-item" href="team.html">team</a>
+                                        <a class="dropdown-item" href="price.html">price</a>
+                                        <a class="dropdown-item" href="elements.html">Elements</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
-        </header>
-        <!--================Header Menu Area =================-->
-        
-        <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
-           	<div class="container box_1620">
-           		<div class="banner_inner d-flex align-items-center">
-					<div class="banner_content">
-						<div class="media">
-							<div class="d-flex">
-								<img src="img/personal.jpg" alt="">
-							</div>
-							<div class="media-body">
-								<div class="personal_text">
-									<h6>Hello Everybody, i am</h6>
-									<h3>Donald McKinney</h3>
-									<h4>Junior UI/UX Developer</h4>
-									<p>You will begin to realise why this exercise is called the Dickens Pattern (with reference to the ghost showing Scrooge some different futures)</p>
-									<ul class="list basic_info">
-										<li><a href="#"><i class="lnr lnr-calendar-full"></i> 31st December, 1992</a></li>
-										<li><a href="#"><i class="lnr lnr-phone-handset"></i> 44 (012) 6954 783</a></li>
-										<li><a href="#"><i class="lnr lnr-envelope"></i> businessplan@donald</a></li>
-										<li><a href="#"><i class="lnr lnr-home"></i> Santa monica bullevard</a></li>
-									</ul>
-									<ul class="list personal_social">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-            </div>
-        </section>
-        <!--================End Home Banner Area =================-->
-        
-        <!--================Welcome Area =================-->
-        <section class="welcome_area p_120">
-        	<div class="container">
-        		<div class="row welcome_inner">
-        			<div class="col-lg-6">
-        				<div class="welcome_text">
-        					<h4>About Myself</h4>
-        					<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
-        					<div class="row">
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-database"></i>
-        								<h4>$2.5M</h4>
-        								<p>Total Donation</p>
-        							</div>
-        						</div>
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-book"></i>
-        								<h4>1465</h4>
-        								<p>Total Projects</p>
-        							</div>
-        						</div>
-        						<div class="col-md-4">
-        							<div class="wel_item">
-        								<i class="lnr lnr-users"></i>
-        								<h4>3965</h4>
-        								<p>Total Volunteers</p>
-        							</div>
-        						</div>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-6">
-        				<div class="tools_expert">
-        					<div class="skill_main">
-								<div class="skill_item">
-									<h4>After Effects <span class="counter">85</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4>Photoshop <span class="counter">90</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4>Illustrator <span class="counter">70</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4>Sublime <span class="counter">95</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-								<div class="skill_item">
-									<h4>Sketch <span class="counter">75</span>%</h4>
-									<div class="progress_br">
-										<div class="progress">
-											<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Welcome Area =================-->
-        
-        <!--================My Tabs Area =================-->
-        <section class="mytabs_area p_120">
-        	<div class="container">
-        		<div class="tabs_inner">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item">
-							<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">My Experiences</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Education</a>
-						</li>
-					</ul>
-					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-							<ul class="list">
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-								<li>
-								<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-							<ul class="list">
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-								<li>
-									<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-								<li>
-								<span></span>
-									<div class="media">
-										<div class="d-flex">
-											<p>March 2017 to present</p>
-										</div>
-										<div class="media-body">
-											<h4>Colorlib</h4>
-											<p>Senior Web Developer <br />Santa monica, Los angeles</p>
-										</div>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End My Tabs Area =================-->
-        
-        <!--================Feature Area =================-->
-        <section class="feature_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>offerings to my clients</h2>
-        			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
-        		</div>
-        		<div class="feature_inner row">
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-city"></i>
-        					<h4>Architecture</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-skyline"></i>
-        					<h4>Interior Design</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-6">
-        				<div class="feature_item">
-        					<i class="flaticon-sketch"></i>
-        					<h4>Concept Design</h4>
-        					<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $17 each.</p>
-        				</div>
-        			</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Feature Area =================-->
-        
-        <!--================Home Gallery Area =================-->
-        <section class="home_gallery_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Our Latest Featured Projects</h2>
-        			<p>Who are in extremely love with eco friendly system.</p>
-        		</div>
-        		<div class="isotope_fillter">
-        			<ul class="gallery_filter list">
-						<li class="active" data-filter="*"><a href="#">All</a></li>
-						<li data-filter=".brand"><a href="#">Vector</a></li>
-						<li data-filter=".manipul"><a href="#">Raster</a></li>
-						<li data-filter=".creative"><a href="#">UI/UX</a></li>
-						<li data-filter=".design"><a href="#">Printing</a></li>
-					</ul>
-        		</div>
-        	</div>
-        	<div class="container">
-        		<div class="gallery_f_inner row imageGallery1">
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-1.jpg" alt="">
-        						<a class="light" href="img/gallery/project-1.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Helmet Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-2.jpg" alt="">
-        						<a class="light" href="img/gallery/project-2.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>2D Vinyl Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 manipul creative design print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-3.jpg" alt="">
-        						<a class="light" href="img/gallery/project-3.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Creative Poster Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative print">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-4.jpg" alt="">
-        						<a class="light" href="img/gallery/project-4.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>Embosed Logo Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand manipul design">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-5.jpg" alt="">
-        						<a class="light" href="img/gallery/project-5.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Disposable Bottle</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        			<div class="col-lg-4 col-md-4 col-sm-6 brand creative">
-        				<div class="h_gallery_item">
-        					<div class="g_img_item">
-        						<img class="img-fluid" src="img/gallery/project-6.jpg" alt="">
-        						<a class="light" href="img/gallery/project-6.jpg"><img src="img/gallery/icon.png" alt=""></a>
-        					</div>
-        					<div class="g_item_text">
-        						<h4>3D Logo Design</h4>
-        						<p>Client Project</p>
-        					</div>
-        				</div>
-        			</div>
-        		</div>
-        		<div class="more_btn">
-        			<a class="main_btn" href="#">Load More Items</a>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Home Gallery Area =================-->
-        
-        <!--================Testimonials Area =================-->
-        <section class="testimonials_area p_120">
-        	<div class="container">
-        		<div class="main_title">
-        			<h2>Testimonials</h2>
-        			<p>If you are looking at blank cassettes on the web, you may be very confused at the difference in price. You may see some for as low as $.17 each.</p>
-        		</div>
-        		<div class="testi_inner">
-					<div class="testi_slider owl-carousel">
-						<div class="item">
-							<div class="testi_item">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-								<h4>Fanny Spencer</h4>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star-half-o"></i></a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testi_item">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-								<h4>Fanny Spencer</h4>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star-half-o"></i></a>
-							</div>
-						</div>
-						<div class="item">
-							<div class="testi_item">
-								<p>As conscious traveling Paup ers we must always be oncerned about our dear Mother Earth. If you think about it, you travel across her face</p>
-								<h4>Fanny Spencer</h4>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star"></i></a>
-								<a href="#"><i class="fa fa-star-half-o"></i></a>
-							</div>
-						</div>
-					</div>
-        		</div>
-        	</div>
-        </section>
-        <!--================End Testimonials Area =================-->
-        
-        <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
-        	<div class="container">
-        		<div class="row footer_inner">
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget ab_widget">
-        					<div class="f_title">
-        						<h3>About Me</h3>
-        					</div>
-        					<p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-        					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-        				</aside>
-        			</div>
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget news_widget">
-        					<div class="f_title">
-        						<h3>Newsletter</h3>
-        					</div>
-        					<p>Stay updated with our latest trends</p>
-        					<div id="mc_embed_signup">
-                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                	<div class="input-group d-flex flex-row">
-                                        <input name="EMAIL" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
-                                        <button class="btn sub-btn"><span class="lnr lnr-arrow-right"></span></button>		
-                                    </div>				
-                                    <div class="mt-10 info"></div>
-                                </form>
+        </div>
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h5>Feel like home</h5>
+                            <h1>Good Look Guaranteed</h1>
+                            <p>Divide give Dominion wont deep he them seed thing open sixth beast don't yea very
+                                it meat yielding for air in without one upon it without, his creepeth tree
+                                gathering behold and, greater have given deep his</p>
+                            <div class="banner_btn">
+                                <a href="#" class="btn_1">Book Now</a>
+                                <a href="#" class="btn_2">Contact Us</a>
                             </div>
-        				</aside>
-        			</div>
-        			<div class="col-lg-2">
-        				<aside class="f_widget social_widget">
-        					<div class="f_title">
-        						<h3>Follow Me</h3>
-        					</div>
-        					<p>Let us be social</p>
-        					<ul class="list">
-        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        						<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
-        					</ul>
-        				</aside>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
-        
-        
-        
-        
-        
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/popper.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/stellar.js"></script>
-        <script src="vendors/lightbox/simpleLightbox.min.js"></script>
-        <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.ajaxchimp.min.js"></script>
-        <script src="vendors/counter-up/jquery.waypoints.min.js"></script>
-        <script src="vendors/counter-up/jquery.counterup.min.js"></script>
-        <script src="js/mail-script.js"></script>
-        <script src="js/theme.js"></script>
-    </body>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- about part start-->
+    <section class="about_part">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-md-4 col-lg-6">
+                    <div class="about_img ">
+                        <img src="img/about_us_1.png" class="about_img_1" alt="">
+                        <img src="img/about_us_2.png" class="about_img_2" alt="">
+                        <img src="img/about_us_3.png" class="about_img_3" alt="">
+                    </div>
+                </div>
+                <div class="col-md-7 offset-md-1 col-lg-3 offset-lg-1">
+                    <div class="about_text">
+                        <h5>About us</h5>
+                        <h2>Connect with your dream style</h2>
+                        <p>Seed spirit replenish cattle one moved air created. Them fill dont be fed isnt to he
+                            shall god good spirit they are the. Hath Itself their second ifruitful a moving
+                            their creature living every i replenish land and had hen lesser for their good
+                            quality products</p>
+                        <p>Seed spirit replenish cattle one moved air created. Them fill dont be fed isnt to he shall
+                            god good spirit they are the. Hath Itself their second ifruitful a moving their creature
+                            living every</p>
+                        <a href="#" class="btn_3">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about part end-->
+
+    <!-- Service part start-->
+    <section class="service_part section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-lg-6 col-sm-10">
+                    <div class="section_tittle">
+                        <img src="img/section_tittle_icon.png" alt="icon">
+                        <h2>Service Expectation</h2>
+                        <p>Good morning forth gathering doesn't god gathering man and had moveth there dry sixth
+                            dominion
+                            rule divided behold after had he did not move .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="img/service/single_service_1.png" alt="">
+                        <div class="single_service_text">
+                            <h4>Stylish Hair Cut</h4>
+                            <p>Good morning forth gathering does god gathering man and had moveth there
+                                dry so dominion rule divided had</p>
+                            <a href="#" class="btn_3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="img/service/single_service_2.png" alt="">
+                        <div class="single_service_text">
+                            <h4>Wedding Hair</h4>
+                            <p>Good morning forth gathering does god gathering man and had moveth there
+                                dry so dominion rule divided had</p>
+                            <a href="#" class="btn_3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="img/service/single_service_3.png" alt="">
+                        <div class="single_service_text">
+                            <h4>Color & Hair Wash</h4>
+                            <p>Good morning forth gathering does god gathering man and had moveth there
+                                dry so dominion rule divided had</p>
+                            <a href="#" class="btn_3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service part end-->
+
+    <!-- our_offer part start-->
+    <section class="our_offer">
+        <div class="container-fluid">
+            <div class="row justify-content-between">
+                <div class="col-lg-12">
+                    <div class="single_offer_part">
+                        <div class="single_offer">
+                            <img src="img/offer_img_1.png" alt="offer_img_1">
+                            <div class="hover_text">
+                                <img src="img/icon/cutter.svg" alt="#">
+                                <h2>Best Equipment</h2>
+                                <p>Winged day grass creepeth us second signs</p>
+                                <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_offer_part">
+                        <div class="single_offer">
+                            <img src="img/offer_img_2.png" alt="offer_img_1">
+                            <div class="hover_text">
+                                <img src="img/icon/cutter.svg" alt="#">
+                                <h2>Best Price</h2>
+                                <p>Winged day grass creepeth us second signs </p>
+                                <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_offer_part">
+                        <div class="single_offer">
+                            <img src="img/offer_img_3.png" alt="offer_img_1">
+                            <div class="hover_text">
+                                <img src="img/icon/cutter.svg" alt="#">
+                                <h2>Fitness Equipment</h2>
+                                <p>Winged day grass creepeth us second signs</p>
+                                <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single_offer_part">
+                        <div class="single_offer">
+                            <img src="img/offer_img_4.png" alt="offer_img_1">
+                            <div class="hover_text">
+                                <img src="img/icon/cutter.svg" alt="#">
+                                <h2>Fitness Training</h2>
+                                <p>Winged day grass creepeth us second signs</p>
+                                <a href="#" class="offer_btn"><span class="flaticon-slim-right"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our_offer part end-->
+
+
+    <!-- Service part start-->
+    <section class="priceing_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-lg-6 col-sm-10">
+                    <div class="section_tittle">
+                        <img src="img/section_tittle_icon.png" alt="icon">
+                        <h2>Pricing Plan</h2>
+                        <p>Good morning forth gathering doesn't god gathering man and had moveth there dry sixth
+                            dominion rule divided behold after had he did not move .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="single_pricing_item">
+                        <img src="img/pricing_img/pricing_img_1.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Hair Cut</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="img/pricing_img/pricing_img_2.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Hair Color</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="img/pricing_img/pricing_img_3.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Hair Straight</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="img/pricing_img/pricing_img_4.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Shampoo</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="single_pricing_item">
+                        <img src="img/pricing_img/pricing_img_5.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Hair Wash</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="img/pricing_img/pricing_img_6.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Hair Shave</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="img/pricing_img/pricing_img_7.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Men’s Facial</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                    <div class="single_pricing_item">
+                        <img src="img/pricing_img/pricing_img_8.png" alt="">
+                        <div class="single_pricing_text">
+                            <h5>Wedding Style</h5>
+                            <h6>$10.00</h6>
+                            <p>Their days lesser and every firmament</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service part end-->
+
+
+    <!--::review_part start::-->
+    <section class="review_part gray_bg section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="client_review_part owl-carousel">
+                        <div class="client_review_single">
+                            <img src="img/Quote.png" class="Quote" alt="quote">
+                            <div class="client_review_text">
+                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
+                                    god dea earth light for life may itself shall whales made they're blessed whales
+                                    also made from give
+                                    may saying meat. There from heaven it lights face had amazing place</p>
+                            </div>
+                            <div class="client_img">
+                                <img src="img/client/client_1.png" alt="">
+                            </div>
+                            <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
+                        </div>
+                        <div class="client_review_single">
+                            <img src="img/Quote.png" class="Quote" alt="quote">
+                            <div class="client_review_text media-body">
+                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
+                                    god dea earth light for life may itself shall whales made they're blessed whales
+                                    also made from give
+                                    may saying meat. There from heaven it lights face had amazing place</p>
+                            </div>
+                            <div class="client_img">
+                                <img src="img/client/client_1.png" alt="">
+                            </div>
+                            <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
+                        </div>
+                        <div class="client_review_single">
+                            <img src="img/Quote.png" class="Quote" alt="quote">
+                            <div class="client_review_text">
+                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
+                                    god dea earth light for life may itself shall whales made they're blessed whales
+                                    also made from give
+                                    may saying meat. There from heaven it lights face had amazing place</p>
+                            </div>
+                            <div class="client_img">
+                                <img src="img/client/client_1.png" alt="">
+                            </div>
+                            <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
+                        </div>
+                        <div class="client_review_single">
+                            <img src="img/Quote.png" class="Quote" alt="quote">
+                            <div class="client_review_text">
+                                <p>Also made from. Give may saying meat there from heaven it lights face had is gathered
+                                    god dea earth light for life may itself shall whales made they're blessed whales
+                                    also made from give
+                                    may saying meat. There from heaven it lights face had amazing place</p>
+                            </div>
+                            <div class="client_img">
+                                <img src="img/client/client_1.png" alt="">
+                            </div>
+                            <h4>Mosan Cameron, <span>Executive of fedex</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::review_part end::-->
+
+    <!--::chefs_part start::-->
+    <section class="artist_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 col-lg-6 col-sm-10">
+                    <div class="section_tittle">
+                        <img src="img/section_tittle_icon.png" alt="icon">
+                        <h2>Meet Our Artist</h2>
+                        <p>Good morning forth gathering doesn't god gathering man and had moveth there dry sixth
+                            dominion rule divided behold after had he did not move .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="img/artist/artist_1.png" alt="artist">
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text text-center">
+                                <h3>Adam Billiard</h3>
+                                <p>Chef Master</p>
+                                <div class="social_icon">
+                                    <a href="#"> <i class="ti-facebook"></i> </a>
+                                    <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                    <a href="#"> <i class="ti-instagram"></i> </a>
+                                    <a href="#"> <i class="ti-skype"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                                <img src="img/artist/artist_2.png" alt="artist">
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text text-center">
+                                <h3>Fred Macyard</h3>
+                                <p>Chef Master</p>
+                                <div class="social_icon">
+                                    <a href="#"> <i class="ti-facebook"></i> </a>
+                                    <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                    <a href="#"> <i class="ti-instagram"></i> </a>
+                                    <a href="#"> <i class="ti-skype"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                                <img src="img/artist/artist_3.png" alt="artist">
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text text-center">
+                                <h3>Justin Stuard</h3>
+                                <p>Chef Master</p>
+                                <div class="social_icon">
+                                    <a href="#"> <i class="ti-facebook"></i> </a>
+                                    <a href="#"> <i class="ti-twitter-alt"></i> </a>
+                                    <a href="#"> <i class="ti-instagram"></i> </a>
+                                    <a href="#"> <i class="ti-skype"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::chefs_part end::-->
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part section_padding">
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-lg-7">
+                    <div class="regervation_part_iner">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Name *">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control" id="inputPassword4"
+                                        placeholder="Email address *">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <select class="form-control" id="Select">
+                                        <option value="1" selected>Select service*</option>
+                                        <option value="2">Name of service</option>
+                                        <option value="3">Name of service</option>
+                                        <option value="4">Name of service</option>
+                                        <option value="5">Name of service</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="pnone" placeholder="Phone number *">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <div class="input-group date">
+                                        <input id="datepicker" type="text" class="form-control" placeholder="Date *" />
+                                    </div>
+                                </div>
+                                <div class="form-group time_icon col-md-6">
+                                    <select class="form-control" id="Select2">
+                                        <option value="" selected>Time *</option>
+                                        <option value="1">8 AM TO 10AM</option>
+                                        <option value="1">10 AM TO 12PM</option>
+                                        <option value="1">12PM TO 2PM</option>
+                                        <option value="1">2PM TO 4PM</option>
+                                        <option value="1">4PM TO 6PM</option>
+                                        <option value="1">6PM TO 8PM</option>
+                                        <option value="1">4PM TO 10PM</option>
+                                        <option value="1">10PM TO 12PM</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <textarea class="form-control" id="Textarea" rows="4"
+                                        placeholder="Your Note *"></textarea>
+                                </div>
+                            </div>
+
+
+                            <div class="regerv_btn">
+                                <a href="#" class="regerv_btn_iner">Make an Appointment</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+    <!-- blog part start-->
+    <section class="blog_part service_part section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_tittle">
+                        <img src="img/section_tittle_icon.png" alt="icon">
+                        <h2>Latest Style News</h2>
+                        <p>Good morning forth gathering doesn't god gathering man and had moveth there
+                            dry sixth dominion rule divided behold after had he did not move .</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="img/service/single_service_1.png" alt="">
+                        <div class="single_service_text">
+                            <p> <a href="blog.html">art, illustration</a> <span>|</span> March 30, 2019</p>
+                            <h4> <a href="#">There our you divide itseld..</a></h4>
+                            <p>Man moveth days wherein you're that made years he after us light let moved.</p>
+                            <a href="#" class="btn_3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="img/service/single_service_2.png" alt="">
+                        <div class="single_service_text">
+                            <p> <a href="blog.html">art, illustration</a> <span>|</span> March 30, 2019</p>
+                            <h4> <a href="#">One which won two divide..</a></h4>
+                            <p>Man moveth days wherein you're that made years he after us light let moved.</p>
+                            <a href="#" class="btn_3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="single_service_part">
+                        <img src="img/service/single_service_3.png" alt="">
+                        <div class="single_service_text">
+                            <p> <a href="blog.html">art, illustration</a> <span>|</span> March 30, 2019</p>
+                            <h4> <a href="#">There our you divide itseld..</a></h4>
+                            <p>Man moveth days wherein you're that made years he after us light let moved.</p>
+                            <a href="#" class="btn_3">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- blog_part part end-->
+
+    <!-- footer part start-->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-xl-4 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget footer_1">
+                        <h4>About Us</h4>
+                        <p>Do you want to be even more successful? Learn to love learning and growth. 
+                            The more effort you put into improving your skills, the bigger the payoff you
+                             will get. Realize that things </p>
+                        <p class="mt-3" >The more effort you put into improving your skills, the bigger the stil now</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6 col-lg-4">
+                    <div class="single-footer-widget footer_2">
+                        <h4>Contact us</h4>
+                        <div class="contact_info">
+                            <span class="ti-home"></span>
+                            <h5>Los angeles, United States</h5>
+                            <p>659, Rocky beach bullevard, santa monica, Rocky beach, USA.</p>
+                        </div>
+                        <div class="contact_info">
+                            <span class="ti-headphone-alt"></span>
+                            <h5>+44 6532 986 652</h5>
+                            <p>Mon to Fri 9am to 6 pm.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-xl-4 col-sm-8 col-lg-4">
+                    <div class="single-footer-widget footer_3">
+                        <h4>Newsletter</h4>
+                        <p>Stay updated with our latest trends The more effort you put into improving your skills, the bigger the payoff you will get realize that things.</p>
+                        <div class="form-wrap" id="mc_embed_signup">
+                            <form target="_blank"
+                                action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01"
+                                method="get" class="form-inline">
+                                <input class="form-control" name="EMAIL" placeholder="Your Email Address"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your Email Address '"
+                                    required="" type="email">
+                                <button class="btn btn-default text-uppercase"><i class="ti-angle-right"></i></button>
+                                <div style="position: absolute; left: -5000px;">
+                                    <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value=""
+                                        type="text">
+                                </div>
+
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright_part">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer part end-->
+
+    <!-- jquery plugins here-->
+
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- swiper js -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/gijgo.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <!-- contact js -->
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- custom js -->
+    <script src="js/custom.js"></script>
+</body>
+
 </html>

@@ -1,302 +1,143 @@
-;(function($){
-    "use strict"
-    var nav_offset_top = $('.header_area').height()+50; 
-    /*-------------------------------------------------------------------------------
-	  Navbar 
-	-------------------------------------------------------------------------------*/
+(function ($) {
+  "use strict";
 
-	//* Navbar Fixed  
-    function navbarFixed(){
-        if ( $('.header_area').length ){ 
-            $(window).scroll(function() {
-                var scroll = $(window).scrollTop();   
-                if (scroll >= nav_offset_top ) {
-                    $(".header_area").addClass("navbar_fixed");
-                } else {
-                    $(".header_area").removeClass("navbar_fixed");
-                }
-            });
-        };
-    };
-    navbarFixed();
-    
-    function testimonialSlider(){
-        if ( $('.testimonial_slider').length ){
-            $('.testimonial_slider').owlCarousel({
-                loop:true,
-                margin: 30,
-                items: 2,
-                nav:false,
-                autoplay: true,
-                dots: true,
-                smartSpeed: 1500,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    768: {
-                        items: 2,
-                    },
-                }
-            })
-        }
-    }
-    testimonialSlider();
-    
-    //------- Mailchimp js --------//  
+  $('#datepicker').datepicker();
 
-    function mailChimp(){
-        $('#mc_embed_signup').find('form').ajaxChimp();
-    }
-    mailChimp();
-    
-    /* ===== Parallax Effect===== */
-	
-	function parallaxEffect() {
-    	$('.bg-parallax').parallax();
-	}
-	parallaxEffect();
-    
-    
+  $('.popup-youtube, .popup-vimeo').magnificPopup({
+    // disableOn: 700,
+    type: 'iframe',
+    mainClass: 'mfp-fade',
+    removalDelay: 160,
+    preloader: false,
+    fixedContentPos: false
+  });
+
+  $(document).ready(function() {
     $('select').niceSelect();
-    $('#datetimepicker11,#datetimepicker1').datetimepicker({
-        daysOfWeekDisabled: [0, 6]
-    });
-    
-     /*---------gallery isotope js-----------*/
-    function galleryMasonry(){
-        if ( $('#gallery').length ){
-            $('#gallery').imagesLoaded( function() {
-              // images have loaded
-                // Activate isotope in container
-                $("#gallery").isotope({
-                    itemSelector: ".gallery_item",
-                    layoutMode: 'masonry',
-                    animationOptions: {
-                        duration: 750,
-                        easing: 'linear'
-                    }
-                });
-            })
-        }
-    }
-    galleryMasonry();
-	
-	/*----------------------------------------------------*/
-    /*  Simple LightBox js
-    /*----------------------------------------------------*/
-    $('.imageGallery1 .light').simpleLightbox();
-    
-    /*----------------------------------------------------*/
-    /*  Google map js
-    /*----------------------------------------------------*/
-    
-    if ( $('#mapBox').length ){
-        var $lat = $('#mapBox').data('lat');
-        var $lon = $('#mapBox').data('lon');
-        var $zoom = $('#mapBox').data('zoom');
-        var $marker = $('#mapBox').data('marker');
-        var $info = $('#mapBox').data('info');
-        var $markerLat = $('#mapBox').data('mlat');
-        var $markerLon = $('#mapBox').data('mlon');
-        var map = new GMaps({
-        el: '#mapBox',
-        lat: $lat,
-        lng: $lon,
-        scrollwheel: false,
-        scaleControl: true,
-        streetViewControl: false,
-        panControl: true,
-        disableDoubleClickZoom: true,
-        mapTypeControl: false,
-        zoom: $zoom,
-            styles: [
-                {
-                    "featureType": "water",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "color": "#dcdfe6"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "transit",
-                    "stylers": [
-                        {
-                            "color": "#808080"
-                        },
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.highway",
-                    "elementType": "geometry.stroke",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        },
-                        {
-                            "color": "#dcdfe6"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.highway",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "color": "#ffffff"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.local",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        },
-                        {
-                            "color": "#ffffff"
-                        },
-                        {
-                            "weight": 1.8
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.local",
-                    "elementType": "geometry.stroke",
-                    "stylers": [
-                        {
-                            "color": "#d7d7d7"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        },
-                        {
-                            "color": "#ebebeb"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "administrative",
-                    "elementType": "geometry",
-                    "stylers": [
-                        {
-                            "color": "#a7a7a7"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.arterial",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "color": "#ffffff"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.arterial",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "color": "#ffffff"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "landscape",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        },
-                        {
-                            "color": "#efefef"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "color": "#696969"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "administrative",
-                    "elementType": "labels.text.fill",
-                    "stylers": [
-                        {
-                            "visibility": "on"
-                        },
-                        {
-                            "color": "#737373"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "labels.icon",
-                    "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "poi",
-                    "elementType": "labels",
-                    "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road.arterial",
-                    "elementType": "geometry.stroke",
-                    "stylers": [
-                        {
-                            "color": "#d6d6d6"
-                        }
-                    ]
-                },
-                {
-                    "featureType": "road",
-                    "elementType": "labels.icon",
-                    "stylers": [
-                        {
-                            "visibility": "off"
-                        }
-                    ]
-                },
-                {},
-                {
-                    "featureType": "poi",
-                    "elementType": "geometry.fill",
-                    "stylers": [
-                        {
-                            "color": "#dadada"
-                        }
-                    ]
-                }
-            ]
-        });
-    }
+  });
 
-})(jQuery)
+  var review = $('.client_review_part');
+  if (review.length) {
+    review.owlCarousel({
+      items: 1,
+      loop: true,
+      dots: true,
+      autoplay: true,
+      autoplayHoverPause: true,
+      autoplayTimeout: 5000,
+      nav: false,
+      smartSpeed: 2000,
+    });
+  }
+  // menu fixed js code
+  $(window).scroll(function () {
+    var window_top = $(window).scrollTop() + 1;
+    if (window_top > 50) {
+      $('.main_menu').addClass('menu_fixed animated fadeInDown');
+    } else {
+      $('.main_menu').removeClass('menu_fixed animated fadeInDown');
+    }
+  });
+
+//   $(document).ready(function(){
+
+//     var owl_1 = $('#owl-1');
+//     var owl_2 = $('#owl-2');
+
+//     owl_1.owlCarousel({
+//       loop:true,
+//       margin:10,
+//       nav:false,
+//       items: 1,
+//       dots: false,
+//       navText: false,
+//       autoplay: true,
+      
+//     });
+//  owl_2.find(".item").click(function(){
+//     var slide_index = owl_2.find(".item").index(this);
+//     owl_1.trigger('to.owl.carousel',[slide_index,300]);
+//   });
+
+//     owl_2.owlCarousel({
+//       margin:50,
+//       nav: true,
+//       items: 3,
+//       dots: false,
+//       center: true,
+//       loop:true,
+//       navText: false,
+//       autoplay: true,
+//       center: true
+//     });
+    
+//   });
+ 
+
+
+  $('.slider').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    speed: 300,
+    infinite: true,
+    asNavFor: '.slider-nav-thumbnails',
+    // autoplay:true,
+    pauseOnFocus: true,
+    dots: true,
+  });
+ 
+  $('.slider-nav-thumbnails').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider',
+    focusOnSelect: true,
+    infinite: true,
+    prevArrow: false,
+    nextArrow: false,
+    centerMode: true,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: false,
+        }
+      }
+    ]
+  });
+ 
+  //remove active class from all thumbnail slides
+  $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+ 
+  //set active class to first thumbnail slides
+  $('.slider-nav-thumbnails .slick-slide').eq(0).addClass('slick-active');
+ 
+  // On before slide change match active thumbnail to current slide
+  $('.slider').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    var mySlideNumber = nextSlide;
+    $('.slider-nav-thumbnails .slick-slide').removeClass('slick-active');
+    $('.slider-nav-thumbnails .slick-slide').eq(mySlideNumber).addClass('slick-active');
+ });
+ 
+ //UPDATED 
+   
+ $('.slider').on('afterChange', function(event, slick, currentSlide){   
+   $('.content').hide();
+   $('.content[data-id=' + (currentSlide + 1) + ']').show();
+ }); 
+
+ $('.gallery_img').magnificPopup({
+  type: 'image',
+  gallery:{
+    enabled:true
+  }
+});
+
+//------- Mailchimp js --------//  
+function mailChimp() {
+  $('#mc_embed_signup').find('form').ajaxChimp();
+}
+mailChimp();
+
+
+}(jQuery));
